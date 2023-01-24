@@ -1,0 +1,71 @@
+.body {
+  background-image: url("/images/mar.jpeg");
+  opacity: 86%;
+}
+
+.header {
+
+  font-size: 30px;
+  color: whitesmoke;
+  height: 40%;
+  text-align: center;
+  grid-area: header;
+}
+
+.header2 {
+  font-size: 15px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+.main {
+  grid-area: main; 
+  text-align: justify;
+  color: whitesmoke;
+}
+
+.section {
+    grid-area: section;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+.gal {
+  grid-area: gal;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(100px, auto);
+  max-width: 960px;
+  margin: 0 auto;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "header header header header"
+  ". main main main"
+  ". main main main"
+  "gal gal section section"
+  "footer footer footer footer";
+}
+
+#content > * {
+  background: black;
+  padding: 30px;
+  border-radius: 10%;
+  color: white;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+
+
+
+
